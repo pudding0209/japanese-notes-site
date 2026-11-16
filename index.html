@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kotoba Notes — 可以持續擴充的日文學習筆記網站，整理單字、文法與會話。">
+  <title>Kotoba Notes｜日文學習筆記</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./data/lessons.js" defer></script>
+  <script src="./assets/js/app.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">跳至主要內容</a>
+  <header class="topbar">
+    <div class="shell nav-content">
+      <a class="brand" href="./index.html" aria-label="Kotoba Notes 首頁"><span class="brand-symbol">こ</span><span>Kotoba <strong>Notes</strong></span></a>
+      <nav aria-label="主要導覽"><a href="./index.html">學習筆記</a><a href="#about" id="about-link">關於專案</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero shell" id="hero">
+      <div class="hero-copy"><p class="eyebrow">JAPANESE LEARNING JOURNAL ・ 日本語学習ノート</p><h1>把每天學到的日文，<br><em>慢慢整理成自己的知識庫。</em></h1><p class="hero-description">從時間表達到日常會話，用容易閱讀、能持續擴充的方式，記錄每一篇日文學習筆記。</p><a class="primary-button" href="#notes">開始探索筆記 <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="hero-jp">言葉</div><div class="hero-roman">KO·TO·BA</div><div class="art-caption">一日一語、少しずつ。</div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div></div>
+    </section>
+    <section class="shell notes-section" id="notes" aria-labelledby="notes-heading">
+      <div class="section-heading"><div><p class="eyebrow">YOUR LEARNING LIBRARY</p><h2 id="notes-heading">學習筆記 <span class="count" id="lesson-count"></span></h2></div><p>依主題分類，也可以搜尋想學的內容。</p></div>
+      <div class="toolbar"><div class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜尋標題、內容或關鍵字…" aria-label="搜尋筆記"></div><div class="filters" role="group" aria-label="筆記分類"><button type="button" class="filter is-active" data-category="all" aria-pressed="true">全部</button><button type="button" class="filter" data-category="vocabulary" aria-pressed="false">單字</button><button type="button" class="filter" data-category="grammar" aria-pressed="false">文法</button><button type="button" class="filter" data-category="conversation" aria-pressed="false">會話</button></div></div>
+      <div id="lesson-grid" class="lesson-grid" aria-live="polite"></div><p id="empty-state" class="empty-state" hidden>找不到符合條件的筆記，試試其他關鍵字或分類。</p>
+    </section>
+    <section class="shell about-section" id="about"><div><p class="eyebrow">ABOUT THIS PROJECT</p><h2>一份筆記，也是一套可延續的規則。</h2></div><p>本站依照 <code>AGENTS.md</code> 制定的內容格式與視覺規則建立。未來只要照著固定欄位新增資料，網站就能自動生成同樣風格的筆記頁面，不需要每次從頭設計。</p></section>
+  </main>
+  <footer class="site-footer"><div class="shell"><span>Kotoba Notes</span><span>Made for learning, built to grow. · 2026</span></div></footer>
+</body>
+</html>
